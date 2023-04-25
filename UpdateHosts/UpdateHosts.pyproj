@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>ef1368f6-c41f-423d-99c2-347b07a57557</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>RemoveHosts.py</StartupFile>
+    <StartupFile>InputIPAddress.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
