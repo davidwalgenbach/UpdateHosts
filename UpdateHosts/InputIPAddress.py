@@ -41,5 +41,5 @@ try:
         for line in lines:
             fp.write(line)
 except PermissionError:
-    messagebox.showerror("Error", "Administrator permissions are required to run the setup. Please cancel the installation and try again with administrator permissions.")
-    exit
+    messagebox.showerror("Error", "Administrator permissions are required to run the installation. Please cancel the installation and try again with administrator permissions.")
+    exit()
