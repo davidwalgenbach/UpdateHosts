@@ -34,6 +34,11 @@ with open (r"C:\Windows\System32\drivers\etc\hosts", 'r') as fp:
     lines = fp.readlines()
 linetoadd = "\n{}\tplasmatraxdb_tester".format(USER_INP)
 lines.append(linetoadd)
-with open (r"C:\Windows\System32\drivers\etc\hosts", 'w') as fp:
-    for line in lines:
-        fp.write(line)
+
+try:
+    with open (r"C:\Windows\System32\drivers\etc\hosts", 'w') as fp:
+        for line in lines:
+            fp.write(line)
+except PermissionError:
+    messagebox.showinfo("Error", "Administrator permissions are required to run the setup. Please cancel the installation and try again with administrator permissions.")
+    exit
